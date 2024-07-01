@@ -1,0 +1,1 @@
+K4OS es una página web diseñada para proporcionar información detallada sobre la banda de K-Pop argentina K4OS. Este proyecto escolar tiene como objetivo aumentar la visibilidad de la banda y ofrecer a los fans un lugar donde puedan encontrar noticias, biografías de los miembros, discografía, eventos y mucho más.
