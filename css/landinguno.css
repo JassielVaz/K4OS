@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #b68d2c;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Poetsen One", sans-serif;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: gold;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    margin: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cancion {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cancion .video {
+    flex: 1;
+}
+
+.cancion .descripcion {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.integrantes-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrante {
+    display: flex;
+    flex-direction: right;
+    align-items: center;
+    width: 800px; 
+    margin-bottom: 100px;
+}
+
+.integrante.left {
+    justify-content: flex-start;
+}
+
+.integrante.right {
+    justify-content: flex-end;
+}
+
+.integrante img {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.burbuja {
+    background-color:aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    color: black;
+    width: 100%; 
+    text-align: center; 
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria-fotos img {
+    width: 150px;
+    height: 150px;
+}
+
+.foto-destacada {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foto-destacada img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.descripcion-producto {
+    text-align: center;
+}
+
+.historia-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen-historia {
+    flex: 1;
+}
+
+.imagen-historia img {
+    width: 100%;
+    height: auto;
+}
+
+.texto-historia {
+    flex: 1;
+    padding-left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #b68d2c;
+    padding: 0 20px;
+}
+
+.redes a {
+    margin: 0 10px;
+}
+
+.redes img {
+    height: 40px;
+}
+
+.carouselcon {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+.insitar {
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+.insitar h1 {
+    margin-bottom: 10px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.insitar p {
+    margin-bottom: 20px;
+}
+
+#recolectar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recolectar input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#recolectar button {
+    padding: 10px 20px;
+    background-color: #b68d2c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#recolectar button:hover {
+    background-color: gold;
+    color: black;
+}
+
+.integrantes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.integrantes-left,
+.integrantes-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.integrantes-left {
+    order: -10; 
+}
+
+.integrantes-right {
+    order: 1; 
+}
+
+.integrante {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.integrante img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+#tienda{
+    background-color: aliceblue;
+    text-align: center;
+     color:#b68d2c}
+
+#integrantes{
+    background-color:#b68d2c;
+    text-align: center;
+     color:aliceblue}
+
+     
